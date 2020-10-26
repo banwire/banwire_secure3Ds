@@ -1,0 +1,100 @@
+<div class="container">
+  <div class="columns is-mobile is-centered">
+    <div class="column is-half">
+
+      <div class="field">
+        <label class="label">Nombre</label>
+        <p class="control is-expanded has-icons-left">
+          <input class="input" type="text" placeholder="Name" id="card-name">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </p>
+      </div>
+
+      <div class="field">
+        <label class="label">Numero de tarjeta</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="number" placeholder="Numero de tarjeta" id="card-number">
+          <span class="icon is-small is-left">
+            <!-- <i class="fas fa-card"></i> -->
+            <!-- <i class="fab fa-cc-visa"></i> -->
+            <i class="fas fa-credit-card"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        <p class="help is-success">La tarjeta es valida</p>
+      </div>
+
+      <div class="field is-horizontal">
+
+        <div class="field-label is-normal">
+          <label class="label">Fecha / cvv</label>
+        </div>
+
+        <div class="field-body">
+          <div class="field">
+            <div class="select">
+              <select id="card-month">
+                <option>mes</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="select">
+              <select id="card-year">
+                <option>año</option>
+                <option value="20">2020</option>
+                <option value="21">2021</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control has-icons-left">
+              <input class="input" type="password" placeholder="cvv" id="card-cvv">
+              <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="checkbox is-centered">
+            Este pago se realizara utilizando 3Ds, para proceder con el pago asegurece de tener su telefono celular a la mano.
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <p class="control is-expanded">
+          <a class="button is-danger is-fullwidth" id="pay">
+            <span class="icon is-right">
+              <i class="fas fa-dollar-sign"></i>
+            </span>
+
+            <strong id="pay-amount"></strong>
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="modal" id="modalFormCard">
+    <div class="modal-background" onclick="closeModal()"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+        <p class="modal-card-title">Datos de la tarjeta</p>
+        <button class="delete" aria-label="close" onclick="closeModal()"></button>
+      </header>
+      <section class="modal-card-body">
+        <!-- <div id="form-card">
+          <%- include('../pages/formCard') -%>
+        </div> -->
+        <div id="form-card-loader">
+          <%- include('./loader') -%>
+        </div>
+        <!-- <div id="form-card-response">
+          <%- include('../pages/formCardResponse') -%>
+        </div> -->
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-danger" id="login3Ds">Pagar</button>
+        <button class="button" onclick="closeModal()">Cancel</button>
+      </footer>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example 3Ds</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.css">
+    <link rel="stylesheet" href=" https://cdn.rawgit.com/octoshrimpy/bulma-o-steps/master/bulma-steps.css">
+    <link rel="stylesheet" href="css/bulma-pageloader.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="section">
+            <%- include('utils/steps') -%>
+            <%- include('utils/notification') -%>
+            <div id="template-customer">
+                <%- include('pages/formCustomer') -%>
+            </div>
+            <div id="template-card">
+                <%- include('pages/formCard') -%> 
+            </div>
+
+            <div id="template-3Ds">
+                <%- include('pages/form3Ds') -%>
+            </div>
+
+            <%- include('utils/loader') -%>
+        </section>
+    </div>
+    
+    <!-- JS files -->
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>       
+     
+    <script src="./js/router.js"></script>
+    <script src="./js/banwirePayment.js"></script>            
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
