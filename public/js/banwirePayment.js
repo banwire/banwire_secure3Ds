@@ -28,7 +28,7 @@ $(document).ready(function() {
                 $("#template-3Ds").show();
                 // var iframe = document.getElementById('desplay-3Ds'), iframedoc = iframe.contentDocument || iframe.contentWindow.document;
                 // iframedoc.body.innerHTML = atob(response["display"]);
-                $("display-3Ds").html(atob(response["display"]));
+                $("#display-3Ds").html(atob(response["display"]));
                 $("#template-card").hide()
                 $("#preloader").removeClass("is-active");
             },

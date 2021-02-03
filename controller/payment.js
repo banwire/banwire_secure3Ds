@@ -27,7 +27,9 @@ function payment3Ds(req, res){
     request3Ds["amount"] = req.body.amount ? parseFloat(req.body.amount) : 0 ;
     request3Ds["reference"] = `ref-${Math.floor(Math.random() * 50)}`;
     request3Ds["concept"] = "concept test 3Ds";
-    request3Ds["url_response"] = "http://localhost:3004";
+    request3Ds["url_response"] = "https://www.axa.com/";
+
+
 
     if (req.body.customer) {
         request3Ds["customer"]["email"] = req.body.customer.email ? req.body.customer.email: "";
@@ -63,9 +65,10 @@ function ExecPayment(request3Ds) {
             'Authorization': 'Bearer rBwwfxCk4GKJRqUtxcCvEuqnCFTh53X6'
         },
         json: request3Ds,
-        uri: 'http://localhost:3000/v2/charge/secure3Ds'
+        uri: 'https://test.banwire.com/payments/v2/charge/secure3Ds'
+        //uri: 'http://localhost:3000/v2/charge/secure3Ds'
     }
-
+                                                             
 
     return new Promise(function(resolve, reject){
         request(options, function(error, response, body){
