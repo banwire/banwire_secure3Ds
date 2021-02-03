@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  app:
+    image: node:11
+    ports:
+      - "3004:3004"    
+    container_name: fe_banwire_3dsecure
+    working_dir: /usr/src/banwire_3dsecure/
+    restart: always
+    volumes:
+      - .:/usr/src/banwire_3dsecure
+    command: bash -c "npm install && node index.js"
+
